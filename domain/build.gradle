@@ -1,0 +1,37 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+}
+
+android {
+    namespace 'com.bosch.domain'
+    compileSdk rootProject.ext.target_sdk_version
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    // Test
+    testImplementation "junit:junit:$rootProject.ext.junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$rootProject.ext.instrumented_junit_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.instrumented_espresso_version"
+
+    // Hilt
+    implementation "com.google.dagger:hilt-android:$rootProject.ext.hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$rootProject.ext.hilt_version"
+}

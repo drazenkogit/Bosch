@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        tools:context=".ui.ActivityMain">
+
+        <TextView
+            android:id="@+id/country_details_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Capital city -->
+
+        <TextView
+            android:id="@+id/country_details_capital"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Capital city:"
+            android:textColor="@color/white"
+            android:background="@color/black_77"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/country_details_capital_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/country_details_name_text" />
+
+        <TextView
+            android:id="@+id/country_details_capital_text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/country_details_capital"
+            app:layout_constraintTop_toBottomOf="@+id/country_details_name_text" />
+
+        <!-- Area -->
+
+        <TextView
+            android:id="@+id/country_details_area"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Area:"
+            android:textColor="@color/white"
+            android:background="@color/black_77"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/country_details_area_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/country_details_capital" />
+
+        <TextView
+            android:id="@+id/country_details_area_text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/country_details_area"
+            app:layout_constraintTop_toBottomOf="@+id/country_details_capital" />
+
+        <!-- Population -->
+
+        <TextView
+            android:id="@+id/country_details_population"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Population:"
+            android:textColor="@color/white"
+            android:background="@color/black_77"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/country_details_population_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/country_details_area" />
+
+        <TextView
+            android:id="@+id/country_details_population_text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/country_details_population"
+            app:layout_constraintTop_toBottomOf="@+id/country_details_area" />
+
+        <!-- Currencies -->
+
+        <TextView
+            android:id="@+id/country_details_currencies"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Currencies:"
+            android:textColor="@color/white"
+            android:background="@color/black_77"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/country_details_population" />
+
+        <TextView
+            android:id="@+id/country_details_currencies_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/country_details_currencies" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
